@@ -7,12 +7,20 @@ This study was done under Dr Amit Apte from IISER Pune as a part of a credited s
 The embedding methods used were the False Nearest Neighbours(FNN) algorithm for the embedding dimensions and Mutual Information(MI) for optimal time delay values. 
 1. **FNN**: Trying to project an attractor onto a very low dimensional space introduces crossings which shouldn’t happen in an embedding. If points in d dimensions are neighbours of one another due to such crossings, we need to eliminate them. In d dimensions, we can define a nearest neighbour $y^{NN}(k)$ for each value of $y(k)$, where $y(k)$ is a point on the reconstructed attractor in $d$ dimensions. For some threshold size $R_T$ (taken to be 20), if $$|s(k+Td)-s^{NN}(k+Td)|/R_d(k)>R_T,$$ then the neighbours are defined as false nearest neighbours. For most of the attractors, we see that the false nearest neighbours are monotonically decreasing with an increase in d. We take the first zero of the FNN function as the embedding dimension.
 2. **MI**: For distributions over two random variables X and Y, the mutual information is defined as $$I(X;Y) = \sum_x\sum_y p(x,y) \log(p(x,y)/p(x)p(y)).$$ The average mutual information is calculated for different time delay values, and the first minima of the function are taken as the time step.
-   
-![LorenzOriginal](https://github.com/Deepeshmk/Takens-Embedding/assets/139223828/6fb46432-10ef-4ad2-91a4-eb8460efc34d)
-![LorenzReconstructed](https://github.com/Deepeshmk/Takens-Embedding/assets/139223828/0bf6ef52-b24a-4711-a68a-950a3cf1faa9)
 
-![HenonOriginal](https://github.com/Deepeshmk/Takens-Embedding/assets/139223828/3360ee4e-ab5e-4322-b2a6-201fd3fcea51)
-![HenonReconstructed](https://github.com/Deepeshmk/Takens-Embedding/assets/139223828/9aa72431-0b58-478a-926f-e1dd7c643e97)
+## The original and Reconstructed Lorenz Attractors
+|![LorenzOriginal](https://github.com/Deepeshmk/Takens-Embedding/assets/139223828/6fb46432-10ef-4ad2-91a4-eb8460efc34d)|
+|:-:|
+|Original Lorenz Attractor|
+|![LorenzReconstructed](https://github.com/Deepeshmk/Takens-Embedding/assets/139223828/0bf6ef52-b24a-4711-a68a-950a3cf1faa9)|
+|Reconstructed Lorenz Attractor|
+
+## The original and Reconstructed Henon Attractors
+|![HenonOriginal](https://github.com/Deepeshmk/Takens-Embedding/assets/139223828/3360ee4e-ab5e-4322-b2a6-201fd3fcea51)|
+|:-:|
+|Original Henon Attractor|
+|![HenonReconstructed](https://github.com/Deepeshmk/Takens-Embedding/assets/139223828/9aa72431-0b58-478a-926f-e1dd7c643e97)|
+|Reconstructed Henon Attractor|
 
 
 ### Metrics or Assessment methods
