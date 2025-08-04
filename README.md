@@ -24,9 +24,9 @@ The embedding methods used were the False Nearest Neighbours(FNN) algorithm for 
 
 
 ### Metrics or Assessment methods
-We used multiple heuristics to assess our reconstruction$^2$ .
+We used multiple heuristics to assess our reconstruction$ ^2$.
 1. **Pointwise Distance:** After finding the reconstruction of the attractor, we apply the [Procrustes superimposition](https://en.wikipedia.org/wiki/Procrustes_analysis) on the reconstruction to align it to the original attractor optimally using only rotation, reflection and translation. Once the attractors are aligned, we find the total Euclidean distance between the corresponding points of the attractor and divide it by the total number of points to find a pairwise Euclidean distance. In case this distance is small enough, we accept the reconstruction as working well.
-2. We describe the average number 𝜅(k) of the k nearest neighbors of each point on Y’ whose corresponding points match with the k nearest neighbours of the corresponding point on Y. A random sort would give mean of a hypergeometric distribution $k2/N$ and a perfect embedding would give k nearest neighbours. The closer this value is to k, the better is the embedding. We find that the embeddings we find are better than the random sort of points, but not perfect.
+2. We describe the average number 𝜅(k) of the k nearest neighbours of each point on Y’ whose corresponding points match with the k nearest neighbours of the corresponding point on Y. A random sort would give a mean of a hypergeometric distribution $k^2/N$ and a perfect embedding would give k nearest neighbours. The closer this value is to k, the better the embedding. We find that the embeddings we find are better than the random sort of points, but not perfect.
 
 
 
